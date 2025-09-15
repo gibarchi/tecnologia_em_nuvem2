@@ -17,6 +17,6 @@ echo ' AllowOverride All' >> /etc/apache2/apache2.conf && \
 echo ' Require all granted' >> /etc/apache2/apache2.conf && \
 echo '</Directory>' >> /etc/apache2/apache2.conf
 
-EXPOSE $(PORT}
+EXPOSE ${PORT}
 
 CMD ["apache2-foreground"]
